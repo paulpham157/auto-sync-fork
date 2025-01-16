@@ -1,0 +1,31 @@
+name: Auto Sync Forks
+
+on:
+  schedule:
+    - cron: ${{ vars.SYNC_SCHEDULE || '0 0 * * 0' }}
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      SYNC_SCHEDULE: ${{ vars.SYNC_SCHEDULE || '0 0 * * 0' }}
+      PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      YOUR_USERNAME_OR_ORGANIZATION_NAME: ${{ vars.YOUR_USERNAME_OR_ORGANIZATION_NAME || 'paulpham157' }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        if: steps.cache-npm.outputs.cache-hit != 'true'
+        run: npm install
+        
+      - name: Run sync script
+        run: npm start
