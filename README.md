@@ -23,7 +23,7 @@
 2. Get the bot token from @BotFather
 3. Get your chat ID by:
    - Send a message to your bot
-   - Visit: https://api.telegram.org/bot<Your-Bot-Token>/getUpdates
+   - Visit: https://api.telegram.org/botTELEGRAM_BOT_TOKEN/getUpdates on browser. Example: https://api.telegram.org/bot123:ABCDEF/getUpdates
    - Find your chat ID in the response
 4. Add secrets in GitHub repository:
    - TELEGRAM_BOT_TOKEN: Your bot token. example: 123:ABCDEF
