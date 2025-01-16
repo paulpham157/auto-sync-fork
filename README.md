@@ -7,8 +7,8 @@
 - Add new secrets with name
   - PERSONAL_TOKEN: your github account token, not repository token. example: ghp_xxx
 - Add new variables with name
-  - SYNC_SCHEDULE: cron expression. example every Sunday at 00:00: 0 0 * * 0
   - YOUR_USERNAME_OR_ORGANIZATION_NAME: your username or organization name. example: paulpham157
+- # Cronjob default is weekly on Sunday at 00:00, change suitable for you in .github/workflows/sync.yml
 
 ## Running Manually on Local Machine
 
@@ -20,10 +20,11 @@
 ## Telegram Notification Setup (Optional)
 
 1. Create a new Telegram bot via [@BotFather](https://t.me/botfather)
-2. Get the bot token
+2. Get the bot token from @BotFather
 3. Get your chat ID by:
    - Send a message to your bot
-   - Visit: https://api.telegram.org/bot<YourBOTToken>/getUpdates
+   - Visit: https://api.telegram.org/bot<Your-Bot-Token>/getUpdates
+   - Find your chat ID in the response
 4. Add secrets in GitHub repository:
    - TELEGRAM_BOT_TOKEN: Your bot token. example: 123:ABCDEF
    - TELEGRAM_CHAT_ID: Your chat ID. example: 1234567890

@@ -2,14 +2,14 @@ name: Auto Sync Forks
 
 on:
   schedule:
-    - cron: ${{ vars.SYNC_SCHEDULE || '0 0 * * 0' }}
+    - cron: '0 0 * * 0'
+    # Cronjob default is weekly on Sunday at 00:00, change suitable for you
   workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     env:
-      SYNC_SCHEDULE: ${{ vars.SYNC_SCHEDULE || '0 0 * * 0' }}
       PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
       YOUR_USERNAME_OR_ORGANIZATION_NAME: ${{ vars.YOUR_USERNAME_OR_ORGANIZATION_NAME || 'paulpham157' }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
