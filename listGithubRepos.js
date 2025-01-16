@@ -9,7 +9,7 @@ async function getAllForkedRepos() {
         let hasMore = true;
 
         while (hasMore) {
-            const response = await fetch(`${CONSTANT.BASE_URL}/user/repos?page=${page}&per_page=${perPage}`, {
+            const response = await fetch(`${CONSTANT.BASE_URL}/user/repos?type=public&page=${page}&per_page=${perPage}`, {
                 method: 'GET',
                 headers: CONSTANT.HEADERS
             });
