@@ -11,7 +11,7 @@ Auto-sync fork is a GitHub Actions workflow that automatically syncs your fork w
 - Go to repository settings
 - Select Secrets and variables → Actions
 - Add new secrets with name
-  - **PERSONAL_TOKEN**: your github account token/github organization token, not repository token. example: 
+  - **PERSONAL_TOKEN**: your GitHub account token/GitHub organization token, not repository token. example: 
 ```
 ghp_xxx
 ```
