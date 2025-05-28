@@ -1,5 +1,7 @@
 # Auto-sync fork
 
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/paulpham157/auto-sync-fork?utm_source=oss&utm_medium=github&utm_campaign=paulpham157%2Fauto-sync-fork&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+
 ## What is this?
 
 Auto-sync fork is a GitHub Actions workflow that automatically syncs your fork with the upstream repository.
