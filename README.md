@@ -46,7 +46,10 @@ npm start
    - **TELEGRAM_BOT_TOKEN**: Your bot token. example: `123:ABCDEF`
    - **TELEGRAM_CHAT_ID**: Your chat ID. example: `1234567890`
 
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/paulpham157?style=flat-square)](https://github.com/sponsors/paulpham157)
-[![Patreon](https://img.shields.io/badge/Patreon-PaulPham157-orange?style=flat-square)](https://www.patreon.com/PaulPham157)
-[![ko-fi](https://img.shields.io/badge/ko--fi-PaulPham157-orange?style=flat-square)](https://ko-fi.com/paulpham157)
-[![PayPal](https://img.shields.io/badge/PayPal-hungpham2302-orange?style=flat-square)](https://paypal.me/hungpham2302)
+- [![GitHub Sponsors](https://img.shields.io/github/sponsors/paulpham157?style=flat-square)](https://github.com/sponsors/paulpham157)
+
+- [![Patreon](https://img.shields.io/badge/Patreon-PaulPham157-orange?style=flat-square)](https://www.patreon.com/PaulPham157)
+
+- [![ko-fi](https://img.shields.io/badge/ko--fi-PaulPham157-orange?style=flat-square)](https://ko-fi.com/paulpham157)
+
+- [![PayPal](https://img.shields.io/badge/PayPal-hungpham2302-orange?style=flat-square)](https://paypal.me/hungpham2302)
