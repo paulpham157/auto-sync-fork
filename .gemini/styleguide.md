@@ -1,7 +1,7 @@
 # Auto Sync Fork Node.js Style Guide
 
 # Important
-When you chatting with user, use Vietnamese language to explain to user.
+When chatting with the user, use Vietnamese language to explain to the user.
 
 # Introduction
 This style guide outlines the coding conventions for Node.js code developed at "Auto Sync Fork" project.
@@ -21,7 +21,7 @@ This style guide outlines the coding conventions for Node.js code developed at "
 ## Imports
 * **Group imports:**
     * Standard library imports
-    * Related third party imports
+    * Related third-party imports
     * Local application/library specific imports
 * **Absolute imports:** Always use absolute imports for clarity.
 * **Import order within groups:**  Sort alphabetically.

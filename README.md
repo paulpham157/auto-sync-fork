@@ -1,10 +1,8 @@
 # Auto-sync fork
 
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/paulpham157/auto-sync-fork?utm_source=oss&utm_medium=github&utm_campaign=paulpham157%2Fauto-sync-fork&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
-
 ## What is this?
 
-Auto-sync fork is a GitHub Actions workflow that automatically syncs your fork with the upstream repository.
+Auto-sync fork is a GitHub Actions workflow that automatically syncs your public fork with the upstream repository.
 
 ## How to install?
 
@@ -29,7 +27,8 @@ Auto-sync fork is a GitHub Actions workflow that automatically syncs your fork w
 ```bash
 npm start
 ```
-- Make a cron job on your local machine to run every hour/day/week...
+- Make the process run in background
+- Make a cron job on your own local machine to run every hour/day/week...
 
 ### Telegram Notification (Optional)
 
@@ -46,10 +45,6 @@ npm start
    - **TELEGRAM_BOT_TOKEN**: Your bot token. example: `123:ABCDEF`
    - **TELEGRAM_CHAT_ID**: Your chat ID. example: `1234567890`
 
-- [![GitHub Sponsors](https://img.shields.io/github/sponsors/paulpham157?style=flat-square)](https://github.com/sponsors/paulpham157)
+## Wanna buy me a coffee?
 
-- [![Patreon](https://img.shields.io/badge/Patreon-PaulPham157-orange?style=flat-square)](https://www.patreon.com/PaulPham157)
-
-- [![ko-fi](https://img.shields.io/badge/ko--fi-PaulPham157-orange?style=flat-square)](https://ko-fi.com/paulpham157)
-
-- [![PayPal](https://img.shields.io/badge/PayPal-hungpham2302-orange?style=flat-square)](https://paypal.me/hungpham2302)
+- Click the sponsor button on [auto-sync-fork repository](https://github.com/paulpham157/auto-sync-fork) on GitHub
