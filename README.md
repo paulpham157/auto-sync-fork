@@ -48,6 +48,3 @@ npm start
 ## Wanna buy me a coffee?
 
 - Click the sponsor button on [auto-sync-fork repository](https://github.com/paulpham157/auto-sync-fork) on GitHub
-
-> **Note**
-> This is also my first time using Gemini for Pull Request reviews. All configurations are stored in the `.gemini` directory
