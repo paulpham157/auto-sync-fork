@@ -14,9 +14,14 @@ async function getAllForkedRepos() {
                 headers: CONSTANT.HEADERS
             });
 
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(`GitHub API error: ${response.status} - ${errorData.message || 'Unknown error'}`);
+            }
+
             const repos = await response.json();
-            
-            if (!repos || repos.length === 0) {
+
+            if (!Array.isArray(repos) || repos.length === 0) {
                 hasMore = false;
                 break;
             }
